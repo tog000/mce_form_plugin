@@ -31,11 +31,11 @@
 				window.onload=function(){
 					tinymce.init({
 						selector: "textarea",
-						//extended_valid_elements : 'question',
-						//custom_elements : 'question',
+						extended_valid_elements : 'question answer',
+						custom_elements : 'question answer',
 						content_css : 'css/style.css',
-						plugins: "noneditable example",
-						toolbar:"insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | example"
+						plugins: "noneditable question code",
+						toolbar:"insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | question "
 					});
 				}
 
