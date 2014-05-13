@@ -20,7 +20,7 @@
 			
 			<textarea style="height:400px;"></textarea>
 
-			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 			<script src="./js/tinymce/tinymce.min.js"></script>
 			<script src="./js/plugin.js"></script>
 			<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
@@ -31,8 +31,8 @@
 				window.onload=function(){
 					tinymce.init({
 						selector: "textarea",
-						extended_valid_elements : 'question answer',
-						custom_elements : 'question answer',
+						custom_elements : 'question,answer',
+						extended_valid_elements : 'question,answer[correct]',
 						content_css : 'css/style.css',
 						plugins: "noneditable question code",
 						toolbar:"insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | question "
