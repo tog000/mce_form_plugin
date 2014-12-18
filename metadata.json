@@ -1,4 +1,5 @@
 {
 "title":"MCE Plugin",
-"description":"A plugin that can render custom HTML/XML, editable through a dialog"
+"description":"A plugin that can render custom HTML/XML, editable through a dialog",
+"repository":"http://github.com/tog000/mce_form_plugin.git"
 }
